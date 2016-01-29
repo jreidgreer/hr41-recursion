@@ -1,5 +1,5 @@
 // Recursion Test Specs
-// Recursion Problems by Laura Weaver 
+// Recursion Problems by Laura Weaver
 // HR41
 
 var htmlStrings = [
@@ -9,8 +9,8 @@ var htmlStrings = [
 describe('Recursion', function(){
   describe('classicFibonacci', function(){
     it('Should match the results of the Fibonacci Sequence.', function(){
-        var expected = 12586269025;
-        var result = classicFibonacci(50);
+        var expected = 6765;
+        var result = classicFibonacci(20);
         expect(result).to.equal(expected);
         expect(classicFibonacci(20)).to.equal(6765);
     });
@@ -35,7 +35,7 @@ describe('Recursion', function(){
   describe('tagCount', function(){
 
     //Yes, we could totally use getElementsByTagName to find this as well.
-    // But a demonstration of its usefulness is nice. 
+    // But a demonstration of its usefulness is nice.
     it('Should match results of getElementsByClassName.length', function(){
       htmlStrings.forEach(function(htmlString){
         var $rootElement = $(htmlString);
